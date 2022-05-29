@@ -478,7 +478,7 @@ Tab:NewValueSelection("Custom Width [*]",0,1000,0.01,1,function(value)
 end)
 
 
-Tab:NewValueSelection("Custom Proportion",0,1000,0.1,1,function(value)
+Tab:NewValueSelection("Custom Proportion",0,100,0.1,1,function(value)
     local args = {
 		[1] = {
 			["BodyTypeScale"] = nil,
@@ -492,7 +492,7 @@ Tab:NewValueSelection("Custom Proportion",0,1000,0.1,1,function(value)
 	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
 end)
 
-Tab:NewValueSelection("Custom Proportion [*]",0,1000,0.01,1,function(value)
+Tab:NewValueSelection("Custom Proportion [*]",0,100,0.01,1,function(value)
     local args = {
 		[1] = {
 			["BodyTypeScale"] = nil,
@@ -540,7 +540,7 @@ Tab:NewLabel("Save Outfit", false)
 
 Tab:NewButton("Click To Save",function() 
     local args = {
-    [1] = "CSM Outfit Save",
+    [1] = "CSM",
 }
 
 game:GetService("ReplicatedStorage").AvatarEditorConnections.SaveOutfit:InvokeServer(unpack(args)) end, false)
@@ -646,8 +646,181 @@ Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;]]--
 
 local Tab = Window:NewTab("Local Stuff",false)
 
+Tab:NewButton("Boom!",function() local id = "http://www.roblox.com/asset/?id=6823153536"
+spawn(function()
 
-Tab:NewLabel("Nothing has been added here yet!", false)
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+Tab:NewButton("Sus",function() local id = "http://www.roblox.com/asset/?id=6823184374"
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+Tab:NewButton("Baka",function() local id = "http://www.roblox.com/asset/?id=6347896897"
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+Tab:NewButton("Amogus",function() local id = "http://www.roblox.com/asset/?id=6425216149"
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+
+Tab:NewButton("Ded",function() local id = "http://www.roblox.com/asset/?id=8980953313"
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+Tab:NewButton("AUGHHHHH",function() local id = "http://www.roblox.com/asset/?id=9056758516"
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+
+Tab:NewButton("Ahhhh DAMN",function() local id = "http://www.roblox.com/asset/?id=7278613452"
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+
+Tab:NewButton("Poopy",function() local id = "http://www.roblox.com/asset/?id=4809574295"
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+while true do
+   wait(5)
+spawn(function()
+
+for i, v in pairs(game:GetDescendants()) do
+   if v.ClassName == "Sound" and v.SoundId ~= id then
+       v.SoundId = id
+   end
+end
+end)
+end end, false)
+
+
+
+
+Tab:NewLabel("^^^ Try These Out ^^^", false)
 
 
 local Tab = Window:NewTab("Avatar Stuff",false)
@@ -916,15 +1089,124 @@ end
 
 end, false)
 
+local Tab = Window:NewTab("Morphs",false)
+Tab:NewButton("Chicken",function() local args = {
+    [1] = "9484063120",
+    [2] = "JacketAccessory",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.WearItem:InvokeServer(unpack(args))
+
+wait(.1)
+
+local args = {
+    [1] = "8595639351",
+    [2] = "HatAccessory",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.WearItem:InvokeServer(unpack(args)) end, false)
+
+Tab:NewButton("Duck",function() local args = {
+    [1] = "9545034065",
+    [2] = "JacketAccessory",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.WearItem:InvokeServer(unpack(args))
+
+wait(.1)
+
+local args = {
+    [1] = "7028693099",
+    [2] = "HatAccessory",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.WearItem:InvokeServer(unpack(args)) end, false)
+
+
+
+
 
 local Tab = Window:NewTab("Other Stuff",false)
 
 
-Tab:NewButton("Restart Menu [Also Updates]",function() loadstring(game:HttpGet('https://raw.githubusercontent.com/Carter-P/poopyface/main/mm'))() end, false)
+Tab:NewButton("Restart Menu [Also Updates]",function() loadstring(game:HttpGet('https://raw.githubusercontent.com/Carter-P/carter/main/carter%20main'))() end, false)
 Tab:NewButton("Rejoin [VIP Servers Not Supported]",function() local tpservice= game:GetService("TeleportService")
 local plr = game.Players.LocalPlayer
 tpservice:Teleport(game.PlaceId, plr) end, false)
 
+
+local Tab = Window:NewTab("House Options",false)
+Tab:NewButton("Privacy Glass [ ON ]",function() 
+
+local args = {
+    [1] = true,
+}
+
+game:GetService("ReplicatedStorage").ClientRemotes.HouseCurtains:FireServer(unpack(args)) end, false)
+
+Tab:NewButton("Privacy Glass [ OFF ]",function() 
+
+local args = {
+    [1] = false,
+}
+
+game:GetService("ReplicatedStorage").ClientRemotes.HouseCurtains:FireServer(unpack(args)) end, false)
+
+Tab:NewButton("Garage Door [ OPEN ]",function() 
+
+local args = {
+    [1] = false,
+}
+
+game:GetService("ReplicatedStorage").ClientRemotes.GarageDoor:FireServer(unpack(args)) end, false)
+Tab:NewButton("Garage Door [ CLOSED ]",function() 
+
+local args = {
+    [1] = true,
+}
+
+game:GetService("ReplicatedStorage").ClientRemotes.GarageDoor:FireServer(unpack(args)) end, false)
+Tab:NewButton("Doors [ LOCKED ]",function() 
+
+local args = {
+    [1] = true,
+}
+
+game:GetService("ReplicatedStorage").ClientRemotes.LockHouseDoors:FireServer(unpack(args)) end, false)
+Tab:NewButton("Doors [ UNLOCKED ]",function() 
+
+local args = {
+    [1] = false,
+}
+
+game:GetService("ReplicatedStorage").ClientRemotes.LockHouseDoors:FireServer(unpack(args)) end, false)
+Tab:NewButton("Teleport To House ]",function()  game:GetService("ReplicatedStorage").ClientRemotes.TpToHouse:FireServer() end, false)
+
+local Tab = Window:NewTab("Tag Options",false)
+Tab:NewButton("Minutes Streak Tag",function() local args = {
+    [1] = "[🕑]",
+    [2] = "",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateRPName:InvokeServer(unpack(args)) end, false)
+Tab:NewButton("Days Played Streak",function() local args = {
+    [1] = "[🔥]",
+    [2] = "",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateRPName:InvokeServer(unpack(args)) end, false)
+Tab:NewButton("Both Streaks",function() local args = {
+    [1] = "[🕑] [🔥]",
+    [2] = "",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateRPName:InvokeServer(unpack(args)) end, false)
+Tab:NewButton("RESET",function() local args = {
+    [1] = "",
+    [2] = "",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateRPName:InvokeServer(unpack(args)) end, false)
 
 
 local Tab = Window:NewTab("Scripts",false)
@@ -935,8 +1217,8 @@ Tab:NewButton("CMD-X [ADMIN]",function() loadstring(game:HttpGet("https://raw.gi
 Tab:NewButton("Fate's Admin [ADMIN]",function() loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))(); end, false)
 Tab:NewButton("ShatterVast Admin [ADMIN]",function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Carter-P/fgdfgfdf/main/shatter"))(); end, false)
 
-
-
+local Tab = Window:NewTab("Changelog",false)
+Tab:NewParagraph(" Added House Control Tab",0.069,14,false)
 
 --[[ local tpservice= game:GetService("TeleportService")
 local plr = game.Players.LocalPlayer
