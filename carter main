@@ -5,7 +5,7 @@ local Window = library:CreateWindow("Carter's Substantial Menu",true)
 
 local Tab = Window:NewTab("Local Player",false)
 Tab:NewButton("God Mode",function() maxHealth = game.Players.LocalPlayer.Humanoid.MaxHealth player.Health = maxHealth end, false)
-Tab:NewButton("Invisible",function() local ScriptStarted = false
+Tab:NewButton("Invisible [ E to toggle]",function() local ScriptStarted = false
 local Keybind = "E" --Set to whatever you want, has to be the name of a KeyCode Enum.
 local Transparency = true --Will make you slightly transparent when you are invisible. No reason to disable.
 local NoClip = false --Will make your fake character no clip.
@@ -536,31 +536,118 @@ Tab:NewValueSelection("Custom BodyType [*]",0,1000,0.01,1,function(value)
 	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args))
 end)
 
-Tab:NewLabel("Pre-Set Sizes", false)
+Tab:NewLabel("Save Outfit", false)
 
-Tab:NewButton("Ultra Micro",function() print('Example') end, false)
-Tab:NewButton("Micro",function() print('Example') end, false)
-Tab:NewButton("Very Small",function() print('Example') end, false)
-Tab:NewButton("Small (Your Dick)",function() print('Example') end, false)
-Tab:NewButton("TINI",function() print('Example') end, false)
-Tab:NewButton("Squirt",function() print('Example') end, false)
-Tab:NewButton("Short",function() print('Example') end, false)
-Tab:NewButton("Avarage",function() print('Example') end, false)
-Tab:NewButton("Above Average",function() print('Example') end, false)
-Tab:NewButton("Tall",function() print('Example') end, false)
-Tab:NewButton("Massive",function() print('Example') end, false)
-Tab:NewButton("Titan",function() print('Example') end, false)
-Tab:NewButton("Monsterosity",function() print('Example') end, false)
-Tab:NewButton("Behemoth",function() print('Example') end, false)
-Tab:NewButton("Gargantuan",function() print('Example') end, false)
-Tab:NewButton("Jacob",function() print('Example') end, false)
-Tab:NewButton("Your Mother",function() print('Example') end, false)
-Tab:NewButton("Gamebreaker",function() print('Example') end, false)
+Tab:NewButton("Click To Save",function() 
+    local args = {
+    [1] = "CSM Outfit Save",
+}
+
+game:GetService("ReplicatedStorage").AvatarEditorConnections.SaveOutfit:InvokeServer(unpack(args)) end, false)
+
+
+Tab:NewLabel("Presets", false)
+
+Tab:NewButton("TINI",function() local args = {
+		[1] = {
+			["BodyTypeScale"] = 1,
+			["DepthScale"] = 0.1,
+			["HeadScale"] = 0.1,
+			["HeightScale"] = 0.1,
+			["ProportionScale"] = 1,
+			["WidthScale"] = 0.1
+		}
+	}
+	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args)) end, false)
+
+Tab:NewButton("Squirt",function() local args = {
+		[1] = {
+			["BodyTypeScale"] = 1,
+			["DepthScale"] = 0.5,
+			["HeadScale"] = 0.5,
+			["HeightScale"] = 0.5,
+			["ProportionScale"] = 1,
+			["WidthScale"] = 0.5
+		}
+	}
+	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args)) end, false)
+
+Tab:NewButton("Short",function() local args = {
+		[1] = {
+			["BodyTypeScale"] = 1,
+			["DepthScale"] = 0.6,
+			["HeadScale"] = 0.6,
+			["HeightScale"] = 0.6,
+			["ProportionScale"] = 1,
+			["WidthScale"] = 0.6
+		}
+	}
+	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args)) end, false)
+
+Tab:NewButton("Above Average",function() local args = {
+		[1] = {
+			["BodyTypeScale"] = 1,
+			["DepthScale"] = 2,
+			["HeadScale"] = 2,
+			["HeightScale"] = 2,
+			["ProportionScale"] = 1,
+			["WidthScale"] = 2
+		}
+	}
+	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args)) end, false)
+
+Tab:NewButton("Massive",function() local args = {
+		[1] = {
+			["BodyTypeScale"] = 1,
+			["DepthScale"] = 4,
+			["HeadScale"] = 4,
+			["HeightScale"] = 4,
+			["ProportionScale"] = 1,
+			["WidthScale"] = 4
+		}
+	}
+	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args)) end, false)
+
+Tab:NewButton("Your Mother",function() local args = {
+		[1] = {
+			["BodyTypeScale"] = 1,
+			["DepthScale"] = 8,
+			["HeadScale"] = 8,
+			["HeightScale"] = 8,
+			["ProportionScale"] = 1,
+			["WidthScale"] = 8
+		}
+	}
+	game:GetService("ReplicatedStorage").AvatarEditorConnections.UpdateScale:InvokeServer(unpack(args)) end, false)
+
+local Tab = Window:NewTab("Humanoid",false)
+
+Tab:NewValueSelection("Speed",0,1000,1,16,function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+Tab:NewValueSelection("Jump Power",0,1000,1,16,function(value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
+
+--[[getgenv().WalkSpeedValue = 100; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;]]--
+
+
+
+
+
+
 
 local Tab = Window:NewTab("Local Stuff",false)
 
 
-
+Tab:NewLabel("Nothing has been added here yet!", false)
 
 
 local Tab = Window:NewTab("Avatar Stuff",false)
