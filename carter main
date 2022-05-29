@@ -1227,7 +1227,7 @@ tpservice:Teleport(game.PlaceId, plr) ]]
 
 
 
---loadstring(game:HttpGet('https://raw.githubusercontent.com/Carter-P/poopyface/main/mm'))()
+--loadstring(game:HttpGet('https://raw.githubusercontent.com/Carter-P/carter/main/carter%20main'))()
 
 
 Window:DestroyGuiButton()
